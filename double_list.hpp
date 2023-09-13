@@ -136,10 +136,6 @@ bool List<T>::operator!=(List<T>& oth)
 template <typename T>
 void List<T>::sort()
 {
-    // if (head && tail)
-    // {
-    //     quick_sort(head, tail);
-    // }
     for (Node* i = head; i != nullptr; i = i->next)
     {
         for (Node* j = i->next; j != nullptr; j = j->next)
