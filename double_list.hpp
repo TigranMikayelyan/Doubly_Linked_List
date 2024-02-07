@@ -13,7 +13,7 @@ List<T>::~List()
 }
 
 template <typename T>
-List<T>::List(const List& oth)
+List<T>::List(const List<T>& oth)
 {   
     if (oth.head == nullptr)
     {
@@ -39,7 +39,7 @@ List<T>::List(const List& oth)
 }
 
 template <typename T>
-List<T>::List(List&& oth)
+List<T>::List(List<T>&& oth)
 {
     this->head = oth.head;
     this->tail = oth.tail;
